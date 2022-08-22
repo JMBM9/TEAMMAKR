@@ -1,0 +1,31 @@
+{
+  "name": "unit10hw",
+  "version": "1.0.0",
+  "description": "ASSIGNMENTs",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JMBM9/THE-TEAMMAKR"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMBM9/THE-TEAMMAKR/upload"
+  },
+  "homepage": "",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "yargs": "^15.4.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "node-notifier": ">=8.0.1"
+  }
+}
