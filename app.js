@@ -59,15 +59,15 @@ function addTeamMember() {
     .prompt([
       {
         type: "list",
-        name: "what_type",
-        message: "Add an engineer or intern to the team?",
-        choices: ["Engineer", "Intern", "Not at this time"],
+        name: "position",
+        message: "Would you like to add an engineer or intern to the team?",
+        choices: ["Engineer", "Intern", "Exit"],
       },
     ])
     .then((val) => {
-      if (val.what_type === "Engineer") {
+      if (val.position === "Engineer") {
         engineerQuery();
-      } else if (val.what_type === "Intern") {
+      } else if (val.position === "Intern") {
         internQuery();
       } else {
         createFile();
@@ -145,7 +145,7 @@ function createFile() {
   } else {
 
     fs.writeFileSync(outputPath, render(teamMembers), "UTF-8");
-    console.log("File created in the output folder");
+    console.log("File created");
   }
   
 }
